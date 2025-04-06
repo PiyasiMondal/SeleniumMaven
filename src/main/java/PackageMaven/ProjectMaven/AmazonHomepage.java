@@ -29,7 +29,7 @@ public class AmazonHomepage
 	public void hoveroveronAccountsandlist(WebDriver driver) throws InterruptedException
 	{
 		Actions a1=new Actions(driver);
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		a1.moveToElement(accountsandList).perform();
 	}
 	
