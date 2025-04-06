@@ -33,13 +33,15 @@ public class AmazonHomepage
 		a1.moveToElement(accountsandList).perform();
 	}
 	
-	public void signinclick()
+	public void signinclick() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		signin.click();
 	}
 	
-	public void search()
+	public void search() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		scarchproduct.sendKeys("laptop"+Keys.ENTER);
 	}
 	
