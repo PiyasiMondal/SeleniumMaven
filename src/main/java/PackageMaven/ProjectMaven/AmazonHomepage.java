@@ -1,5 +1,7 @@
 package PackageMaven.ProjectMaven;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,22 +28,26 @@ public class AmazonHomepage
 	
 	
 	//Step 2
-	public void hoveroveronAccountsandlist(WebDriver driver) throws InterruptedException
+	public void hoveroveronAccountsandlist(WebDriver driver) 
 	{
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Actions a1=new Actions(driver);
-		Thread.sleep(6000);
+		
+		
 		a1.moveToElement(accountsandList).perform();
 	}
 	
-	public void signinclick() throws InterruptedException
+	public void signinclick() 
 	{
-		Thread.sleep(3000);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		signin.click();
 	}
 	
-	public void search() throws InterruptedException
+	public void search() 
 	{
-		Thread.sleep(3000);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//Thread.sleep(3000);
 		scarchproduct.sendKeys("laptop"+Keys.ENTER);
 	}
 	
